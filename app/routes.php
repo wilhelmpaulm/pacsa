@@ -15,4 +15,89 @@ Route::get('/', function()
 {
 	return View::make('base.index');
 });
+Route::get('/registration', function()
+{
+	return View::make('base.registration');
+});
+Route::get('/login', function()
+{
+	return View::make('base.login');
+});
+Route::get('/logout', function()
+{
+        Auth::logout();
+	return View::make('base.login');
+});
+Route::get('/manage-registrations', ['before'=> 'auth', function()
+{
+        $registrations = Registration::all();
+        
+        $data = [
+          'registrations' => $registrations  
+        ];
+    
+	return View::make('base.manageregistrations', $data);
+}]);
+Route::post('/approveregistration',array('before' => 'auth', function()
+{
+    // Only authenticated users may enter...
 
+
+        $id = Input::get('id');
+        $r = Registration::find($id);
+        $r->status = "approved";
+        $r->save();
+        
+        return Redirect::back();
+}));
+Route::post('/login', function()
+{
+        if(Auth::attempt(['username' => Input::get('username'), 'password' => Input::get('password')])){
+            return Redirect::to('/manage-registrations');
+        }
+        else{
+            return "forbidden access";
+        }
+});
+Route::get('/registration-list', function()
+{
+        $registrations = Registration::all();
+        
+        $data = [
+          'registrations' => $registrations  
+        ];
+    
+	return View::make('base.registrationlist', $data);
+});
+Route::post('/submitregistration', function()
+{
+//    var_dump($_POST);
+        $r = Registration::create([
+           'school' => Input::get('school'),  
+           'address' => Input::get('address'),  
+           'head_delegate' => Input::get('head_delegate'),  
+           'mobile1' => Input::get('mobile1'),  
+           'mobile2' => Input::get('mobile2'),  
+           'email' => Input::get('email'), 
+           'status' => "pending"  
+        ]);
+        
+        for ($index = 0; $index < count(Input::get("name")); $index++) {
+            $rd = Registration_detail::create([
+                'registration_no' => $r->id,
+                'name' => Input::get('name')[$index],
+                'gender' => Input::get('gender')[$index],
+                'type' => Input::get('type')[$index],
+                'contact' => Input::get('contact')[$index]
+            ]);
+            
+        }
+    
+	return Redirect::to('/');
+});
+
+
+
+Route::resource('registrations', 'RegistrationsController');
+
+Route::resource('registration_details', 'Registration_detailsController');

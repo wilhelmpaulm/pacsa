@@ -4,7 +4,8 @@
 
     <head>
         <meta charset="utf-8">
-        <title>PACSA</title>
+        <title>Philippine Association of Campus Student Advisers
+</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="wilhelmpaulm@gmail.com">
@@ -16,8 +17,8 @@
         {{HTML::style('css/bootstrap-responsive.min.css')}}
         {{HTML::style('css/font-awesome.min.css')}}
         {{HTML::style('css/wilhelmpaulm.css')}}
-        {{HTML::style('css/component.css')}}
-        {{HTML::style('css/default.css')}}
+        <!--{{HTML::style('css/component.css')}}-->
+<!--        {{HTML::style('css/default.css')}}-->
         <!--{{HTML::style('css/parsley.css')}}-->
         <!--{{HTML::style('css/ladda.css')}}-->
         <!--{{HTML::style('css/select2.css')}}-->
@@ -33,8 +34,8 @@
         <!--    {{HTML::script('js/spin.min.js')}}-->
         <!--{{HTML::script('js/ladda.js')}}-->
         <!--{{HTML::script('js/select2.min.js')}}-->
-        {{HTML::script('js/toucheffects.js')}}
-        {{HTML::script('js/modernizr.custom.js')}}
+        <!--{{HTML::script('js/toucheffects.js')}}-->
+        <!--{{HTML::script('js/modernizr.custom.js')}}-->
         {{HTML::script('js/scrolly.js')}}
         <!--{{HTML::script('js/demoad.js')}}-->
 
@@ -95,7 +96,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <!--<img src="{{URL::asset('pacsa/logo.png')}}" width="px">-->
-                    <a class="brand" href="#">Philippine Association of Campus Student Advisers</a>
+                    <a class="brand" href="{{URL::to('/')}}">Philippine Association of Campus Student Advisers</a>
                     <div class="nav-collapse collapse">
                         <ul class="nav pull-right">
                             <!--<li class="active"><a href="#">Home</a></li>-->

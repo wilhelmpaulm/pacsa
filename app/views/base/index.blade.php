@@ -6,13 +6,13 @@
         <div class="text-center" style="color: white">
 <!--                <p style="font-size: 30px"> Welcome to my site! I'll be your guide </p>
             <hr>-->
-            <div><img src='{{URL::asset("pacsa/logo.png")}}' alt="Wilhelm in a party!"  title="I have a nightlife too" style="height: 200px" class="img-circle" ></div>
+            <div><img src='{{URL::asset("pacsa/logo_1.png")}}' alt="Wilhelm in a party!"  title="I have a nightlife too" style="height: 200px" class="img-circle" ></div>
             <h1>Philippine Association of Campus Student Advisers</h1>
             <br>
             <p>" Integral/holistic formation of Campus Advisers and Student Leaders through an enlightened intellectual, moral, social and spiritual citizenry "</p>
         </div>
     </div>
-    <div class="bg-p8">
+    <div class="bg-p9">
         <div class="container" id="event">
             <div class="hero-unit text-center" style="background-color: rgba(0,0,0,0);color: white">
                 <p class="fs20">34th Annual National convention & Seminar Workshop For Campus Advisers</p>
@@ -29,7 +29,7 @@
 
         </div>
     </div>
-    <div class="">
+    <div class="bg-p8">
         <div class="container" id="program">
             <div class="hero-unit text-center" style="background-color: rgba(0,0,0,0);color: white">
                 <i class="icon-calendar icon-5x c-white"></i>
@@ -487,6 +487,7 @@
                                         Before Oct 31, 2013 
                                     </p>
 
+                            <a href="{{URL::to('registration');}}"><button class="btn btn-block btn-large btn-primary">Register</button></a>
                                 </div>
                             </div>
                         </li>
@@ -504,6 +505,7 @@
                                         Inclusive of membership fee
                                     </p>
 
+                            <a href="{{URL::to('registration');}}"><button class="btn btn-block btn-large  btn-primary">Register</button></a>
                                 </div>
                             </div>
                         </li>
@@ -521,6 +523,7 @@
                                         Inclusive of membership fee
                                     </p>
 
+                            <a href="{{URL::to('registration');}}"><button class="btn btn-block btn-large  btn-primary">Register</button></a>
                                 </div>
                             </div>
                         </li>
@@ -540,14 +543,14 @@
             </div>
         </div>
     </div>
-    <div class="">
+    <div class="bg-p6">
         <div class="container" id="faqs">
             <div class="hero-unit text-center" style="background-color: rgba(0,0,0,0);color: white">
                 <i class="icon-question icon-5x"></i>
                 <h2 class="fs60">FAQs</h2>
                 <hr>
             </div>
-            <div class="row-fluid">
+            <div class="row-fluid  text-center" style="background-color: rgba(0,0,0,0);color: white">
                 <div class="span6 offset3">
                     <h3 class="text-center">
                         Are you accepting walk-ins?
@@ -576,7 +579,7 @@
                     <p>
                         You may also do so but extended stay will not be covered by the fee as well. 
                     </p>
-                    <hr>
+                    <!--<hr>-->
 
                 </div>
 
