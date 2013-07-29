@@ -20,6 +20,7 @@
                 <p class="fs20">18th Annual National convention & Seminar Workshop For Student Leaders</p>
                 <hr>
                 <i class="icon-ticket icon-5x"></i>
+                <h2 class="fs60 c-white" >Theme</h2>
                 <hr >
                 <p class="fs30"><strong class="fs40">P</strong>ursuing <strong class="fs40">A</strong>cademic and <strong class="fs40">C</strong>o-Cultural <strong class="fs40">S</strong>trategies & <strong>A</strong>dvancing</p>
                 <p class="fs30"><strong class="fs40">P</strong>artnerships among <strong class="fs40">A</strong>dvisers, <strong class="fs40">C</strong>ommunities & <strong class="fs40">S</strong>tudents</p>
@@ -28,16 +29,16 @@
 
         </div>
     </div>
-    <div class="bg-p7">
+    <div class="">
         <div class="container" id="program">
             <div class="hero-unit text-center" style="background-color: rgba(0,0,0,0);color: white">
                 <i class="icon-calendar icon-5x c-white"></i>
                 <h2 class="fs60 c-white" >Program</h2>
                 <hr>
                 <div class="row-fluid ">
-                    <div class="span6">
+                    <div class="span10 offset1" id="day1">
                         <h2 class="">Day 1</h2>
-                        <table  class="table  table-bordered ">
+                        <table  class="table  table-bordered table-condensed">
                             <thead>
                                 <tr>
                                     <th>Time</th>
@@ -161,9 +162,11 @@
 
 
                     </div>
-                    <div class="span6">
+                </div>
+                <div class="row-fluid ">
+                    <div class="span10 offset1" id="day2">
                         <h2>Day 2</h2>
-                        <table  class="table  table-bordered  ">
+                        <table  class="table  table-bordered table-condensed">
                             <thead>
                                 <tr>
                                     <th>Time</th>
@@ -212,18 +215,119 @@
                                     <td>Free Time/ Talents</td>
                                     <td></td>
                                 </tr>
-                                
+
                             </tbody>
                         </table>
 
                     </div>
-                    <div class="span6">
+                </div>
+                <div class="row-fluid ">
+                    <div class="span10 offset1" id="day3">
                         <h2>Day 3</h2>
+                        <table  class="table  table-bordered table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Activities</th>
+                                    <th>Person Responsible</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>06:00 AM</td>
+                                    <td>Breakfast</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>08:00 AM</td>
+                                    <td>Plenary Session 3: "Bench Marking on Best Practices From Universities"</td>
+                                    <td>Mr. Gio Tingzon</td>
+                                </tr>
+                                <tr>
+                                    <td>10:00 AM</td>
+                                    <td>Break-out Session 3</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>12:00 PM</td>
+                                    <td>Lunch</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>01:30 PM</td>
+                                    <td>Parallel Sessions and Simultaneous Activities</td>
+                                    <td>Prof. Ma. Lourdes Melegrito</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Competitions/ Exhibits</td>
+                                    <td>Students</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Proposed Constitutional Amendment/ Ratification</td>
+                                    <td>Advisers</td>
+                                </tr>
+                                <tr>
+                                    <td>05:30 PM</td>
+                                    <td>Board Meeting</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>06:00 PM</td>
+                                    <td>Dinner</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>08:00 PM</td>
+                                    <td>Cultural Night and Competitions</td>
+                                    <td></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
 
                     </div>
-                    <div class="span6">
+                </div>
+                <div class="row-fluid ">    
+                    <div class="span10 offset1" id="day4">
                         <h2>Day 4</h2>
-
+                        <table  class="table  table-bordered table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Activities</th>
+                                    <th>Person Responsible</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>06:00 AM</td>
+                                    <td>Breakfast</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>08:00 AM</td>
+                                    <td>Closing Program</td>
+                                    <td>Board Meeting</td>
+                                </tr>
+                                <tr>
+                                    <td>10:00 AM</td>
+                                    <td>Board Meeting</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>12:00 PM</td>
+                                    <td>Lunch</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>01:30 PM</td>
+                                    <td>Environmental Surfing</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -231,52 +335,251 @@
 
         </div>
     </div>
-    <div class="bg-p4">
-        <div class="container" id="program">
-            <div class="hero-unit text-center" style="background-color: rgba(0,0,0,0);color: white">
-                <p class="fs20"> Programming languages I love </p>
-                <p class="fs40"> Java, PHP, HTML5, JavaScript, Ruby, Python, C/C++ </p>
-                <hr>
-                <i class="icon-laptop icon-5x"></i>
-                <h2 class="fs60"> I LOVE TO CODE </h2>
-                <hr>
-                <p class="fs20"> Some libraries and frameworks I use </p>
-                <p class="fs40"> JQuery, CodeIgniter, Laravel 4, Rails 4 </p>
+    <div class="bg-p7">
+        <div class="container" id="speakers">
+            <div class="hero-unit text-center" style="background-color: rgba(0,0,0,0)">
+                <i class="icon-bullhorn icon-5x c-white"></i>
+                <h2 class="fs60 c-white" >Speakers</h2>
+                <hr >
+                <div class="row-fluid">
+                    <ul class="thumbnails">
+                        <li class="span3">
+                            <div class="thumbnail well">
+                                <img alt="300x300" width="200px" class="img-circle" src="{{URL::asset('pacsa/speakers/download.jpg')}}" />
+                                <div class="caption">
+                                    <h3>
+                                        Thumbnail label
+                                    </h3>
+                                    <p>
+                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="span3">
+                            <div class="thumbnail well">
+                                <img alt="300x300" width="200px" class="img-circle" src="{{URL::asset('pacsa/speakers/download.jpg')}}" />
+                                <div class="caption">
+                                    <h3>
+                                        Thumbnail label
+                                    </h3>
+                                    <p>
+                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="span3">
+                            <div class="thumbnail well">
+                                <img alt="300x300" width="200px"  class="img-circle" src="{{URL::asset('pacsa/speakers/download.jpg')}}" />
+                                <div class="caption">
+                                    <h3>
+                                        Thumbnail label
+                                    </h3>
+                                    <p>
+                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="span3">
+                            <div class="thumbnail well">
+                                <img alt="300x300" width="200px" class="img-circle" src="{{URL::asset('pacsa/speakers/download.jpg')}}" />
+                                <div class="caption">
+                                    <h3>
+                                        Thumbnail label
+                                    </h3>
+                                    <p>
+                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row-fluid">
+                    <ul class="thumbnails">
+                        <li class="span3">
+                            <div class="thumbnail well">
+                                <img alt="300x300" width="200px" class="img-circle" src="{{URL::asset('pacsa/speakers/download.jpg')}}" />
+                                <div class="caption">
+                                    <h3>
+                                        Thumbnail label
+                                    </h3>
+                                    <p>
+                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="span3">
+                            <div class="thumbnail well">
+                                <img alt="300x300" width="200px" class="img-circle" src="{{URL::asset('pacsa/speakers/download.jpg')}}" />
+                                <div class="caption">
+                                    <h3>
+                                        Thumbnail label
+                                    </h3>
+                                    <p>
+                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="span3">
+                            <div class="thumbnail well">
+                                <img alt="300x300" width="200px"  class="img-circle" src="{{URL::asset('pacsa/speakers/download.jpg')}}" />
+                                <div class="caption">
+                                    <h3>
+                                        Thumbnail label
+                                    </h3>
+                                    <p>
+                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="span3">
+                            <div class="thumbnail well">
+                                <img alt="300x300" width="200px" class="img-circle" src="{{URL::asset('pacsa/speakers/download.jpg')}}" />
+                                <div class="caption">
+                                    <h3>
+                                        Thumbnail label
+                                    </h3>
+                                    <p>
+                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-    <div class="bg-lime ">
-        <div class="container" id="awards">
+    <div class="">
+        <div class="container" id="register">
             <div class="hero-unit text-center" style="background-color: rgba(0,0,0,0);color: white">
-                <i class="icon-html5 icon-5x"></i>
-                <p class="fs40"> 3rd Startup Weekend Manila First Place</p>
-                <p class="fs40"> 3rd Startup Weekend Manila People's Choice</p>
+                <!--<hr>-->
+                <i class="icon-tag icon-5x"></i>
+                <h2 class="fs60">Registration</h2>
                 <hr>
-                <h2 class="fs60">Hackathons! Hackathons! Hackathons!</h2>
-                <hr>
-                <i class="icon-windows icon-5x"></i>
-                <p class="fs40"> DLSU Hackercup WP8 First Place</p>
+                <div class="row-fluid">
+                    <ul class="thumbnails">
+                        <li class="span4">
+                            <div class="thumbnail well">
+                                <img alt="300x300" width="200px" class="img-polaroid" src="{{URL::asset('pacsa/speakers/download.jpg')}}" />
+                                <div class="caption">
+                                    <h3>
+                                        Early Bird Rate
+                                    </h3>
+                                    <p>
+                                        PHP 200 Discount 
+                                    </p>
+                                    <p>
+                                        Before Oct 31, 2013 
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="span4">
+                            <div class="thumbnail well">
+                                <img alt="300x300" width="200px" class="img-polaroid" src="{{URL::asset('pacsa/speakers/download.jpg')}}" />
+                                <div class="caption">
+                                   <h3>
+                                        Adviser Registration
+                                    </h3>
+                                    <p>
+                                        PHP 5000 
+                                    </p>
+                                    <p>
+                                        Inclusive of membership fee
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="span4">
+                            <div class="thumbnail well">
+                                <img alt="300x300" width="200px"  class="img-polaroid" src="{{URL::asset('pacsa/speakers/download.jpg')}}" />
+                                <div class="caption">
+                                    <h3>
+                                        Student Registration
+                                    </h3>
+                                    <p>
+                                        PHP 4900 
+                                    </p>
+                                    <p>
+                                        Inclusive of membership fee
+                                    </p>
+
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="bg-p5">
+    <div class="bg-lime">
         <div class="container" id="contact">
             <div class="hero-unit text-center" style="background-color: rgba(0,0,0,0);color: white">
-                <p class="fs20"> Send me an email </p>
-                <p style="font-size: xx-large"> <i class="icon-envelope"></i>  wilhelmpaulm@gmail.com</p>
+                <p class="fs30"> Send me an email </p>
                 <hr>
-                <p class="fs20"> Follow me on theses sites </p>
-                <p style="font-size: xx-large"> <i class="icon-twitter"></i>  @wilhelmpaulm</p>
-                <br>
-                <p style="font-size: xx-large"> <i class="icon-facebook"></i>  facebook.com/wilhelmpaulm</p>
-                <br>
-                <p style="font-size: xx-large"> <i class="icon-instagram"></i>  instagram.com/wilhelmpaulm</p>
-                <br>
-                <p style="font-size: xx-large"> <i class="icon-linkedin-sign"></i>  linkedin.com/in/wilhelmpaulm</p>
+                <p style="font-size: xx-large"> <i class="icon-envelope"></i>  renato.molano@delasalle.edu.ph</p>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <div class="container" id="faqs">
+            <div class="hero-unit text-center" style="background-color: rgba(0,0,0,0);color: white">
+                <i class="icon-question icon-5x"></i>
+                <h2 class="fs60">FAQs</h2>
                 <hr>
-                <p class="fs20"> Look! Free Code! </p>
-                <p style="font-size: xx-large"> <i class="icon-github"></i>  github.com/wilhelmpaulm</p>
+            </div>
+            <div class="row-fluid">
+                <div class="span6 offset3">
+                    <h3 class="text-center">
+                        Are you accepting walk-ins?
+                    </h3>
+                    <p>
+                        Yes we are accepting walk-in registration but the price may vary depending on the availability of the venue to accommodate more people
+                    </p>
+                    <hr>
+                    <h3 class="text-center">
+                        Do you have separate meals for people with allergies?
+                    </h3>
+                    <p>
+                        If you have allergies and other food concerns you may call the venue or the organizers
+                    </p>
+                    <hr>
+                    <h3 class="text-center">
+                        Can I go to the venue at an earlier date?
+                    </h3>
+                    <p>
+                        You may go to the venue at an earlier date although accommodations for said date will not be covered by the fee paid.
+                    </p>
+                    <hr>
+                    <h3 class="text-center">
+                        Can I stay longer in the venue?
+                    </h3>
+                    <p>
+                        You may also do so but extended stay will not be covered by the fee as well. 
+                    </p>
+                    <hr>
+
+                </div>
+
             </div>
         </div>
     </div>

@@ -16,6 +16,8 @@
         {{HTML::style('css/bootstrap-responsive.min.css')}}
         {{HTML::style('css/font-awesome.min.css')}}
         {{HTML::style('css/wilhelmpaulm.css')}}
+        {{HTML::style('css/component.css')}}
+        {{HTML::style('css/default.css')}}
         <!--{{HTML::style('css/parsley.css')}}-->
         <!--{{HTML::style('css/ladda.css')}}-->
         <!--{{HTML::style('css/select2.css')}}-->
@@ -31,7 +33,10 @@
         <!--    {{HTML::script('js/spin.min.js')}}-->
         <!--{{HTML::script('js/ladda.js')}}-->
         <!--{{HTML::script('js/select2.min.js')}}-->
+        {{HTML::script('js/toucheffects.js')}}
+        {{HTML::script('js/modernizr.custom.js')}}
         {{HTML::script('js/scrolly.js')}}
+        <!--{{HTML::script('js/demoad.js')}}-->
 
 
         <style type="text/css">
@@ -81,33 +86,47 @@
     </head>
 
     <body>
-            <div class="navbar  navbar-fixed-top">
-                <div class="navbar-inner">
-                    <div class="container">
-                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <!--<img src="{{URL::asset('pacsa/logo.png')}}" width="px">-->
-                        <a class="brand" href="#">Philippine Association of Campus Student Advisers</a>
-                        <div class="nav-collapse collapse">
-                            <ul class="nav pull-right">
-                                <!--<li class="active"><a href="#">Home</a></li>-->
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#event">Event</a></li>
-                                <li><a href="#program">Program</a></li>
-                                <li><a href="#speakers">Speakers</a></li>
-                                <li><a href="#register">Register</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                                <li><a href="#faqs">FAQs</a></li>
-                               
-                            </ul>
+        <div class="navbar  navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--<img src="{{URL::asset('pacsa/logo.png')}}" width="px">-->
+                    <a class="brand" href="#">Philippine Association of Campus Student Advisers</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right">
+                            <!--<li class="active"><a href="#">Home</a></li>-->
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#event">Event</a></li>
+                            <!--<li><a href="#program">Program</a></li>-->
+                            <li class="dropdown">
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown">Program<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#program">Program</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#day1">Day 1 - Nov 23</a></li>
+                                    <li><a href="#day2">Day 2 - Nov 24</a></li>
+                                    <li><a href="#day3">Day 3 - Nov 25</a></li>
+                                    <li><a href="#day4">Day 4 - Nov 26</a></li>
+<!--                                    <li class="nav-header">Nav header</li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li><a href="#">One more separated link</a></li>-->
+                                </ul>
+                            </li>
+                            <li><a href="#speakers">Speakers</a></li>
+                            <li><a href="#register">Register</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#faqs">FAQs</a></li>
 
-                        </div><!--/.nav-collapse -->
-                    </div>
+                        </ul>
+
+                    </div><!--/.nav-collapse -->
                 </div>
             </div>
+        </div>
 
         <div class="container">
             <div >
