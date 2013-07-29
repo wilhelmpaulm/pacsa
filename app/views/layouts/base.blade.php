@@ -16,28 +16,29 @@
         {{HTML::style('css/bootstrap-responsive.min.css')}}
         {{HTML::style('css/font-awesome.min.css')}}
         {{HTML::style('css/wilhelmpaulm.css')}}
-        {{HTML::style('css/parsley.css')}}
-        {{HTML::style('css/ladda.css')}}
-        {{HTML::style('css/select2.css')}}
+        <!--{{HTML::style('css/parsley.css')}}-->
+        <!--{{HTML::style('css/ladda.css')}}-->
+        <!--{{HTML::style('css/select2.css')}}-->
 
 
         {{HTML::script('js/jquery.js')}}
         {{HTML::script('js/bootstrap.min.js')}}
-        {{HTML::script('js/parsley.min.js')}}
+        <!--{{HTML::script('js/parsley.min.js')}}-->
         {{HTML::script('js/dataTables.min.js')}}
-        {{HTML::script('js/notify.min.js')}}
-        {{HTML::script('js/pulsate.min.js')}}
-        {{HTML::script('js/timer.js')}}
+        <!--{{HTML::script('js/notify.min.js')}}-->
+        <!--{{HTML::script('js/pulsate.min.js')}}-->
+        <!--{{HTML::script('js/timer.js')}}-->
         <!--    {{HTML::script('js/spin.min.js')}}-->
-        {{HTML::script('js/ladda.js')}}
-        {{HTML::script('js/select2.min.js')}}
+        <!--{{HTML::script('js/ladda.js')}}-->
+        <!--{{HTML::script('js/select2.min.js')}}-->
+        {{HTML::script('js/scrolly.js')}}
 
 
         <style type="text/css">
             body {
-                padding-top: 40px;
+                padding-top: 60px;
                 padding-bottom: 40px;
-                background: url('{{URL::asset("bg/escheresque.png")}}');
+                background: url('{{URL::asset("bg/triangles.png")}}');
 
             }
             .hero-unit {
@@ -80,61 +81,43 @@
     </head>
 
     <body>
+            <div class="navbar  navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!--<img src="{{URL::asset('pacsa/logo.png')}}" width="px">-->
+                        <a class="brand" href="#">Philippine Association of Campus Student Advisers</a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right">
+                                <!--<li class="active"><a href="#">Home</a></li>-->
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#event">Event</a></li>
+                                <li><a href="#program">Program</a></li>
+                                <li><a href="#speakers">Speakers</a></li>
+                                <li><a href="#register">Register</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="#faqs">FAQs</a></li>
+                               
+                            </ul>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!--<img src="{{URL::asset('pacsa/logo.png')}}" width="px">-->
-                    <a class="brand" href="#">  PACSA</a>
-                    <div class="nav-collapse collapse">
-                        <ul class="nav pull-right">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li class="nav-header">Nav header</li>
-                                    <li><a href="#">Separated link</a></li>
-                                    <li><a href="#">One more separated link</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                    </div><!--/.nav-collapse -->
+                        </div><!--/.nav-collapse -->
+                    </div>
                 </div>
+            </div>
+
+        <div class="container">
+            <div >
+
+                @yield('main')
+
+
             </div>
         </div>
 
-        <div>
-            <div class="row-fluid">
-                <div class="span12 ">
-
-                    @yield('main')
-
-                </div><!--/span-->
-            </div><!--/row-->
-
-
-
-        </div>
-        <div class="container">
-          
-            <hr>
-            <footer>
-                <p>&copy; Philippine Association of Campus Student Adviser 2013</p>
-            </footer>
-
-        </div>
 
 
 
