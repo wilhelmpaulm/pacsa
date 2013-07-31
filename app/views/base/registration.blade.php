@@ -1,4 +1,4 @@
-@extends('layouts.base')
+@extends('layouts.registration')
 @section('main')
 <div class="well">
     <form class="form-horizontal" action="{{URL::to('submitregistration')}}" method="post">

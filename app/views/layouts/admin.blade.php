@@ -36,7 +36,7 @@
         <!--{{HTML::script('js/select2.min.js')}}-->
         <!--{{HTML::script('js/toucheffects.js')}}-->
         <!--{{HTML::script('js/modernizr.custom.js')}}-->
-        {{HTML::script('js/scrolly.js')}}
+        <!--{{HTML::script('js/scrolly.js')}}-->
         <!--{{HTML::script('js/demoad.js')}}-->
 
 
@@ -71,7 +71,8 @@
                 }
             }
         </style>
-                
+
+
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
           <script src="../assets/js/html5shiv.js"></script>
@@ -99,10 +100,10 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav pull-right">
                             <!--<li class="active"><a href="#">Home</a></li>-->
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#event">Event</a></li>
+                            <li><a href="{{URL::to('/manage-registrations')}}">Manage Registrations</a></li>
+                            <!--<li><a href="{{URL::to('/registration-list')}}">View List</a></li>-->
                             <!--<li><a href="#program">Program</a></li>-->
-                            <li class="dropdown">
+<!--                            <li class="dropdown">
                                 <a href="" class="dropdown-toggle" data-toggle="dropdown">Program<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#program">Program</a></li>
@@ -111,24 +112,15 @@
                                     <li><a href="#day2">Day 2 - Nov 24</a></li>
                                     <li><a href="#day3">Day 3 - Nov 25</a></li>
                                     <li><a href="#day4">Day 4 - Nov 26</a></li>
-<!--                                    <li class="nav-header">Nav header</li>
+                                    <li class="nav-header">Nav header</li>
                                     <li><a href="#">Separated link</a></li>
-                                    <li><a href="#">One more separated link</a></li>-->
+                                    <li><a href="#">One more separated link</a></li>
                                 </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="" class="dropdown-toggle" data-toggle="dropdown">Registration<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#register">Register</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="{{URL::to('/registration')}}">Registrations</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#speakers">Speakers</a></li>
+                            </li>-->
+                            <!--<li><a href="#speakers">Speakers</a></li>-->
                             <!--<li><a href="#register">Register</a></li>-->
-                            <li><a href="#faqs">FAQs</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="{{URL::to('/login')}}">Login</a></li>
+                            <!--<li><a href="#faqs">FAQs</a></li>-->
+                            <li><a href="{{URL::to('/logout')}}">Logout</a></li>
 
                         </ul>
 

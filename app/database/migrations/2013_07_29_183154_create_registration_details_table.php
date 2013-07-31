@@ -20,6 +20,7 @@ class CreateRegistrationDetailsTable extends Migration {
 			$table->string('type')->nullable();
 			$table->string('contact')->nullable();
 			$table->string('email')->nullable();
+			$table->string('status')->nullable();
             $table->timestamps();
         });
     }

@@ -31,9 +31,11 @@ Route::get('/logout', function()
 Route::get('/manage-registrations', ['before'=> 'auth', function()
 {
         $registrations = Registration::all();
+        $registration_details = Registration_detail::all();
         
         $data = [
-          'registrations' => $registrations  
+          'registrations' => $registrations,  
+          'registration_details' => $registration_details  
         ];
     
 	return View::make('base.manageregistrations', $data);
@@ -47,6 +49,12 @@ Route::post('/approveregistration',array('before' => 'auth', function()
         $r = Registration::find($id);
         $r->status = "approved";
         $r->save();
+        
+        $r_d = Registration_detail::where('registration_no', "=", $id)->get();
+        foreach($r_d as $rd){
+            $rd->status = "approved";
+            $rd->save();
+        }
         
         return Redirect::back();
 }));
@@ -69,6 +77,16 @@ Route::get('/registration-list', function()
     
 	return View::make('base.registrationlist', $data);
 });
+Route::get('/attendee-list', function()
+{
+        $r_d = Registration_detail::all();
+        
+        $data = [
+          'r_d' => $r_d  
+        ];
+    
+	return View::make('base.attendeelist', $data);
+});
 Route::post('/submitregistration', function()
 {
 //    var_dump($_POST);
@@ -88,7 +106,8 @@ Route::post('/submitregistration', function()
                 'name' => Input::get('name')[$index],
                 'gender' => Input::get('gender')[$index],
                 'type' => Input::get('type')[$index],
-                'contact' => Input::get('contact')[$index]
+                'contact' => Input::get('contact')[$index],
+                'status' => "pending"
             ]);
             
         }

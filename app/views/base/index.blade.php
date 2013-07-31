@@ -6,8 +6,8 @@
         <div class="text-center" style="color: white">
 <!--                <p style="font-size: 30px"> Welcome to my site! I'll be your guide </p>
             <hr>-->
-            <div><img src='{{URL::asset("pacsa/logo_1.png")}}' alt="Wilhelm in a party!"  title="I have a nightlife too" style="height: 200px" class="img-circle" ></div>
-            <h1>Philippine Association of Campus Student Advisers</h1>
+            <div></div>
+            <h1><img src='{{URL::asset("pacsa/logo_1.png")}}' alt="Wilhelm in a party!"  title="I have a nightlife too"  class="img-circle" > Philippine Association of Campus Student Advisers</h1>
             <br>
             <p>" Integral/holistic formation of Campus Advisers and Student Leaders through an enlightened intellectual, moral, social and spiritual citizenry "</p>
         </div>
@@ -487,15 +487,16 @@
                                         Before Oct 31, 2013 
                                     </p>
 
-                            <a href="{{URL::to('registration');}}"><button class="btn btn-block btn-large btn-primary">Register</button></a>
+                                    <a href="{{URL::to('registration');}}"><button class="btn btn-block btn-large btn-primary">Register</button></a>
                                 </div>
                             </div>
                         </li>
                         <li class="span4">
-                            <div class="thumbnail well">
+                            <div class="thumbnail ">
                                 <img alt="300x300" width="200px" class="img-polaroid" src="{{URL::asset('pacsa/speakers/download.jpg')}}" />
+                                <i class="icon icon-calendar"></i>
                                 <div class="caption">
-                                   <h3>
+                                    <h3>
                                         Adviser Registration
                                     </h3>
                                     <p>
@@ -505,7 +506,7 @@
                                         Inclusive of membership fee
                                     </p>
 
-                            <a href="{{URL::to('registration');}}"><button class="btn btn-block btn-large  btn-primary">Register</button></a>
+                                    <a href="{{URL::to('registration');}}"><button class="btn btn-block btn-large  btn-primary">Register</button></a>
                                 </div>
                             </div>
                         </li>
@@ -523,32 +524,24 @@
                                         Inclusive of membership fee
                                     </p>
 
-                            <a href="{{URL::to('registration');}}"><button class="btn btn-block btn-large  btn-primary">Register</button></a>
+                                    <a href="{{URL::to('registration');}}"><button class="btn btn-block btn-large  btn-primary">Register</button></a>
                                 </div>
                             </div>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="bg-lime">
-        <div class="container" id="contact">
-            <div class="hero-unit text-center" style="background-color: rgba(0,0,0,0);color: white">
-                <p class="fs30"> Send me an email </p>
-                <hr>
-                <p style="font-size: xx-large"> <i class="icon-envelope"></i>  renato.molano@delasalle.edu.ph</p>
-            </div>
-        </div>
-    </div>
+
     <div class="bg-p6">
         <div class="container" id="faqs">
             <div class="hero-unit text-center" style="background-color: rgba(0,0,0,0);color: white">
                 <i class="icon-question icon-5x"></i>
-                <h2 class="fs60">FAQs</h2>
                 <hr>
+                <h2 class="fs60">FAQs</h2>
             </div>
             <div class="row-fluid  text-center" style="background-color: rgba(0,0,0,0);color: white">
                 <div class="span6 offset3">
@@ -579,10 +572,21 @@
                     <p>
                         You may also do so but extended stay will not be covered by the fee as well. 
                     </p>
+                    <br><br>
                     <!--<hr>-->
 
                 </div>
 
+            </div>
+        </div>
+
+        <div class="bg-lime">
+            <div class="container" id="contact">
+                <div class="hero-unit text-center" style="background-color: rgba(0,0,0,0);color: white">
+                    <p class="fs30"> Send me an email </p>
+                    <hr>
+                    <p style="font-size: xx-large"> <i class="icon-envelope"></i>  renato.molano@delasalle.edu.ph</p>
+                </div>
             </div>
         </div>
     </div>
