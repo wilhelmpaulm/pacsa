@@ -7,9 +7,9 @@
             <tr>
                 <th>id</th>
                 <th>School</th>
-                <th>Address</th>
+                <th>Name</th>
                 <th>gender</th>
-                <th>mobile</th>
+                <!--<th>mobile</th>-->
                 <th>status</th>
             </tr>
         </thead>
@@ -20,7 +20,7 @@
                 <td>{{Registration::find($r->registration_no)->school}}</td>
                 <td>{{$r->name}}</td>
                 <td>{{$r->gender}}</td>
-                <td>{{$r->contact}}</td>
+                <!--<td>{{$r->contact}}</td>-->
                 <td>{{$r->status}}</td>
             </tr>
             @endforeach

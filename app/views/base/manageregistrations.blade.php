@@ -16,6 +16,7 @@
                 <th>date approved</th>
                 <th></th>
                 <th></th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -30,7 +31,8 @@
                 <td>{{$r->status}}</td>
                 <td>{{($r->created_at)}}</td>
                 <td>{{$r->updated_at}}</td>
-                <td><a id="" href="#registration{{$r->id}}" role="button" class="btn btn-info" data-toggle="modal">View</a></td>
+                <td><a id="" href="#registration{{$r->id}}" role="button" class="btn btn-info" data-toggle="modal"><i class="icon-eye-open"></i> View</a></td>
+                <td><a id="" href="#fee{{$r->id}}" role="button" class="btn " data-toggle="modal"><i class="icon-money"></i> Fee</a></td>
                 <td>
                     @if($r->status == "pending")  
                     <form action="approveregistration" method="POST">
@@ -50,7 +52,7 @@
 </div>
 
 @foreach($registrations as $r)
-<div id="registration{{$r->id}}" class="modal hide fade " role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="registration{{$r->id}}" class="modal hide fade " role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="width: 720px">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <h3 id="myModalLabel">
@@ -62,7 +64,7 @@
 
     </div>
     <div class="modal-body ">
-        <table border="0" class="table table-bordered table-condensed table-striped">
+        <table border="0" class="table table-bordered table-condensed table-striped dtable" >
             <thead>
                 <tr>
                     <th>Name</th>
@@ -80,6 +82,71 @@
                     <td>{{$rd->contact}}</td>
                 </tr>
                 @endforeach
+            </tbody>
+        </table>
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button> 
+        
+    </div>
+</div>
+@endforeach
+
+@foreach($registrations as $r)
+<?php
+$numAttendees =  Registration_detail::where('registration_no', '=', $r->id)->count();
+$numStudents =  Registration_detail::where('registration_no', '=', $r->id)->where('type','=','student')->count();
+$numAdvisers = Registration_detail::where('registration_no', '=', $r->id)->where('type','=','adviser')->count();
+
+?>
+<div id="fee{{$r->id}}" class="modal hide fade " role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">
+            {{$r->school}}
+        </h3>
+        <p>
+            Number of Attendees : {{$numAttendees}}
+        </p>
+
+    </div>
+    <div class="modal-body ">
+        <table border="0" class="table table-bordered table-condensed table-striped">
+            <thead>
+                <tr>
+                    <th>Attendees</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{$numAdvisers}}</td>
+                    <td>Adviser</td>
+                    <td>PHP 5000</td>
+                    <td>PHP {{$numAdvisers * 5000}}</td>
+                </tr>
+                <tr>
+                    <td>{{$numStudents}}</td>
+                    <td>Student</td>
+                    <td>PHP 4900</td>
+                    <td>PHP {{$numStudents * 4900}}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Total</td>
+                    <td>PHP {{($numStudents * 4900) +($numAdvisers * 5000)}}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>with discount</td>
+                    <td>PHP {{(($numStudents * 4900) +($numAdvisers * 5000))-($numAttendees*200)}}</td>
+                </tr>
+                
             </tbody>
         </table>
 

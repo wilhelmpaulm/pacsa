@@ -494,7 +494,7 @@
                         <li class="span4">
                             <div class="thumbnail ">
                                 <img alt="300x300" width="200px" class="img-polaroid" src="{{URL::asset('pacsa/speakers/download.jpg')}}" />
-                                <i class="icon icon-calendar"></i>
+                                <!--<i class="icon icon-calendar"></i>-->
                                 <div class="caption">
                                     <h3>
                                         Adviser Registration

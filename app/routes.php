@@ -11,6 +11,8 @@
 |
 */
 
+Route::when('admin/*', 'auth');
+
 Route::get('/', function()
 {
 	return View::make('base.index');
@@ -28,40 +30,33 @@ Route::get('/logout', function()
         Auth::logout();
 	return View::make('base.login');
 });
-Route::get('/manage-registrations', ['before'=> 'auth', function()
+Route::get('admin/manage-registrations', function()
 {
         $registrations = Registration::all();
         $registration_details = Registration_detail::all();
-        
         $data = [
           'registrations' => $registrations,  
           'registration_details' => $registration_details  
         ];
-    
 	return View::make('base.manageregistrations', $data);
-}]);
-Route::post('/approveregistration',array('before' => 'auth', function()
+});
+Route::post('admin/approveregistration',function()
 {
-    // Only authenticated users may enter...
-
-
         $id = Input::get('id');
         $r = Registration::find($id);
         $r->status = "approved";
         $r->save();
-        
         $r_d = Registration_detail::where('registration_no', "=", $id)->get();
         foreach($r_d as $rd){
             $rd->status = "approved";
             $rd->save();
         }
-        
         return Redirect::back();
-}));
+});
 Route::post('/login', function()
 {
         if(Auth::attempt(['username' => Input::get('username'), 'password' => Input::get('password')])){
-            return Redirect::to('/manage-registrations');
+            return Redirect::to('admin/manage-registrations');
         }
         else{
             return "forbidden access";
@@ -70,7 +65,6 @@ Route::post('/login', function()
 Route::get('/registration-list', function()
 {
         $registrations = Registration::all();
-        
         $data = [
           'registrations' => $registrations  
         ];
@@ -80,16 +74,13 @@ Route::get('/registration-list', function()
 Route::get('/attendee-list', function()
 {
         $r_d = Registration_detail::all();
-        
         $data = [
           'r_d' => $r_d  
         ];
-    
 	return View::make('base.attendeelist', $data);
 });
 Route::post('/submitregistration', function()
 {
-//    var_dump($_POST);
         $r = Registration::create([
            'school' => Input::get('school'),  
            'address' => Input::get('address'),  
@@ -99,7 +90,6 @@ Route::post('/submitregistration', function()
            'email' => Input::get('email'), 
            'status' => "pending"  
         ]);
-        
         for ($index = 0; $index < count(Input::get("name")); $index++) {
             $rd = Registration_detail::create([
                 'registration_no' => $r->id,
@@ -109,10 +99,8 @@ Route::post('/submitregistration', function()
                 'contact' => Input::get('contact')[$index],
                 'status' => "pending"
             ]);
-            
         }
-    
-	return Redirect::to('/');
+	return Redirect::to('/registration-list');
 });
 
 

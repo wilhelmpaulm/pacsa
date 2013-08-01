@@ -9,8 +9,8 @@
                 <th>School</th>
                 <th>Address</th>
                 <th>Head Delegate</th>
-                <th>mobile</th>
-                <th>email</th>
+                <!--<th>mobile</th>-->  
+                <!--<th>email</th>-->
                 <th>status</th>
             </tr>
         </thead>
@@ -21,8 +21,8 @@
                 <td>{{$r->school}}</td>
                 <td>{{$r->address}}</td>
                 <td>{{$r->head_delegate}}</td>
-                <td>{{$r->mobile1}}</td>
-                <td>{{$r->email}}</td>
+                <!--<td>{{$r->mobile1}}</td>-->
+                <!--<td>{{$r->email}}</td>-->
                 <td>{{$r->status}}</td>
             </tr>
             @endforeach

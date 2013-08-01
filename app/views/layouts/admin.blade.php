@@ -100,7 +100,10 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav pull-right">
                             <!--<li class="active"><a href="#">Home</a></li>-->
-                            <li><a href="{{URL::to('/manage-registrations')}}">Manage Registrations</a></li>
+                            <li><a href="{{URL::to('/')}}">Main Page</a></li>
+                            <!--<li><a href="{{URL::to('/registra')}}">Registration Page</a></li>-->
+                            <li><a href="{{URL::to('admin/manage-registrations')}}">Manage Registrations</a></li>
+                            <!--<li><a href="{{URL::to('admin/registration-calculator')}}">Registration Calculator</a></li>-->
                             <!--<li><a href="{{URL::to('/registration-list')}}">View List</a></li>-->
                             <!--<li><a href="#program">Program</a></li>-->
 <!--                            <li class="dropdown">

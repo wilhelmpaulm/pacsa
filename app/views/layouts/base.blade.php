@@ -105,8 +105,8 @@
                             <li class="dropdown">
                                 <a href="" class="dropdown-toggle" data-toggle="dropdown">Program<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#program">Program</a></li>
-                                    <li class="divider"></li>
+                                    <!--<li><a href="#program">Program</a></li>-->
+                                    <!--<li class="divider"></li>-->
                                     <li><a href="#day1">Day 1 - Nov 23</a></li>
                                     <li><a href="#day2">Day 2 - Nov 24</a></li>
                                     <li><a href="#day3">Day 3 - Nov 25</a></li>
@@ -119,9 +119,11 @@
                             <li class="dropdown">
                                 <a href="" class="dropdown-toggle" data-toggle="dropdown">Registration<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#register">Register</a></li>
+                                    <li><a href="#register">Registration details</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="{{URL::to('/registration')}}">Registrations</a></li>
+                                    <li><a href="{{URL::to('/registration')}}">Register here!</a></li>
+                                    <li><a href="{{URL::to('/registration-list')}}">View registration status</a></li>
+                                    <li><a href="{{URL::to('/attendee-list')}}">View List of Attendees</a></li>
                                 </ul>
                             </li>
                             <li><a href="#speakers">Speakers</a></li>

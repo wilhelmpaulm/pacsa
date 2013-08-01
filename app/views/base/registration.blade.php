@@ -30,7 +30,7 @@
 
                     <!-- Text input-->
                     <div class="control-group">
-                        <label class="control-label" for="head_delegate">deligate</label>
+                        <label class="control-label" for="head_delegate">delegate</label>
                         <div class="controls">
                             <input id="head_deligate" name="head_delegate" type="text" placeholder="Dr. Juan De La Cruz" class="input-xlarge" required="">
                             <p class="help-block">Complete Name of delegate</p>
@@ -78,24 +78,32 @@
 
 
             <div class="row-fluid">
-                                <legend>Attendees</legend>
-                <div class="span10 offset1">
+                <legend>Attendees</legend>
+                <div class="span8 offset2">
 
-                    <table  id="registration_form" class="table table-bordered">
+                    <table width="100%" id="registration_form" class="table table-bordered">
                         <thead>
                             <tr>
                                 <th>Name</th>
                                 <th>Gender</th>
                                 <th>Type</th>
-                                <th>Contact</th>
-                                <th><button class="btn btn-success" type="button" id="add_row"><i class="icon-plus-sign-alt"></button></th>
+                                <th >Contact</th>
+                                <th  ><button class="btn btn-success" type="button" id="add_row"><i class="icon-plus-sign-alt"></button></th>
                             </tr>
                         </thead>
                         <tbody>
 
                         </tbody>
                     </table>
+                    
                     <hr>
+<!--                    <h4>
+                        Total amount w/o discount: 
+                    </h4>
+                    <h4>
+                        Total amount w discount: 
+                    </h4>
+                    <hr>-->
                     <div class="control-group pull-right">
                         <!--<label class="control-label" for="submit">Submit</label>-->
                         <div class="controls">
@@ -114,7 +122,7 @@
         <table><tbody>
                 <tr>
 
-                    <td><input type="text" name="name[]" value="" /></td>
+                    <td><input class="input-block-level" type="text" name="name[]" value="" /></td>
                     <td >
                         <select name="gender[]" class="input-block-level">
                             <option value="male">male</option>
@@ -127,7 +135,7 @@
                             <option value="student">Student</option>
                         </select>
                     </td>
-                    <td><input type="text" name="contact[]" value="" /></td>
+                    <td><input class="input-medium" type="text" name="contact[]" value="" /></td>
                     <th><button class="btn btn-danger" type="button" id="remove_row"><i class="icon-minus-sign-alt"></button></th>
 
                 </tr>
@@ -138,14 +146,21 @@
 </div>
 
 <script>
+//    sumjq = function(selector) {
+//        var sum = 0;
+//
+//        $(selector).each(function() {
+//            sum += Number($(this).val());
+//        });
+//        return sum;
+//    };
+    
     $("body").on("click", "#add_row", function() {
         var newrow = $("#registration_detail tbody").html();
         $("#registration_form > tbody:last").append(newrow);
-
     });
     $("body").on("click", "#remove_row", function() {
         $(this).parent().parent().remove();
-
     });
 
 </script>
