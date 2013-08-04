@@ -12,30 +12,51 @@
 
                     <!-- Text input-->
                     <div class="control-group">
+                        <label class="control-label" for="mobile2">Region</label>
+                        <div class="controls">
+                            <select class="input-block-level" name="mobile2" required="" >
+                                <option>Region 1</option>
+                                <option>Region 2</option>
+                                <option>Region 3</option>
+                                <option>Region 4A</option>
+                                <option>Region 4B</option>
+                                <option>Region 5</option>
+                                <option>CAR</option>
+                                <option>Region 6</option>
+                                <option>Region 7</option>
+                                <option>Region 8</option>
+                                <option>Region 9</option>
+                                <option>Region 10</option>
+                                <option>Region 11</option>
+                                <option>Region 12</option>
+                                <option>ARMM</option>
+                                <option>CARAGA</option>
+                                <option>NCR</option>
+                            </select>
+                            <!--<p class="help-block">(not required)</p>-->
+                        </div>
+                    </div>
+
+
+                    <div class="control-group">
                         <label class="control-label" for="school">School</label>
                         <div class="controls">
-                            <input id="school" name="school" type="text" placeholder="De La Salle University" class="input-xlarge" required="">
-                            <p class="help-block">Enter complete school name</p>
+                            <input id="school" required="" name="school" type="text" placeholder="De La Salle University" class="input-xlarge" required="">
+                            <p class="help-block">Enter complete school name (No acronyms allowed)</p>
                         </div>
                     </div>
 
                     <!-- Text input-->
                     <div class="control-group">
-                        <label class="control-label" for="address">Address</label>
+                        <label class="control-label" for="address">School Address</label>
                         <div class="controls">
-                            <input id="address" name="address" type="text" placeholder="1234 Somewhere St. Faraway Place" class="input-xlarge" required="">
+                            <input id="address" required="" name="address" type="text" placeholder="1234 Somewhere St. Faraway Place" class="input-xlarge" required="">
                             <p class="help-block">Enter complete school address</p>
                         </div>
                     </div>
 
                     <!-- Text input-->
-                    <div class="control-group">
-                        <label class="control-label" for="head_delegate">delegate</label>
-                        <div class="controls">
-                            <input id="head_deligate" name="head_delegate" type="text" placeholder="Dr. Juan De La Cruz" class="input-xlarge" required="">
-                            <p class="help-block">Complete Name of delegate</p>
-                        </div>
-                    </div>
+
             </div>
 
             <div class="span6 ">
@@ -43,25 +64,28 @@
                 <div class="control-group">
                     <label class="control-label" for="mobile1">Primary contact number</label>
                     <div class="controls">
-                        <input id="mobile1" name="mobile1" type="text" placeholder="+639279655572" class="input-xlarge" required="">
+                        <input id="mobile1" required="" name="mobile1" type="text" placeholder="+639279655572" class="input-xlarge" required="">
                         <p class="help-block">Enter primary contact number</p>
                     </div>
                 </div>
 
-                <!-- Text input-->
                 <div class="control-group">
-                    <label class="control-label" for="mobile2">Secondary contact number</label>
+                    <label class="control-label" for="head_delegate">Contact Person</label>
                     <div class="controls">
-                        <input id="mobile2" name="mobile2" type="text" placeholder="+63925698558" class="input-xlarge">
-                        <p class="help-block">(not required)</p>
+                        <input id="head_deligate" required="" name="head_delegate" type="text" placeholder="Dr. Juan De La Cruz" class="input-xlarge" required="">
+                        <p class="help-block">Complete Name of delegate</p>
+                        <p class="help-block">If attending please reenter details in the attendees section</p>
                     </div>
                 </div>
+
+                <!-- Text input-->
+
 
                 <!-- Text input-->
                 <div class="control-group">
                     <label class="control-label" for="email">E-mail</label>
                     <div class="controls">
-                        <input id="email" name="email" type="text" placeholder="juan.delacruz@gmail.com" class="input-xlarge" required="">
+                        <input id="email" required="" name="email" type="email" placeholder="juan.delacruz@gmail.com" class="input-xlarge" required="">
                         <p class="help-block">This will be used to send confirmation</p>
                     </div>
                 </div>
@@ -95,15 +119,15 @@
 
                         </tbody>
                     </table>
-                    
+
                     <hr>
-<!--                    <h4>
-                        Total amount w/o discount: 
-                    </h4>
-                    <h4>
-                        Total amount w discount: 
-                    </h4>
-                    <hr>-->
+                    <!--                    <h4>
+                                            Total amount w/o discount: 
+                                        </h4>
+                                        <h4>
+                                            Total amount w discount: 
+                                        </h4>
+                                        <hr>-->
                     <div class="control-group pull-right">
                         <!--<label class="control-label" for="submit">Submit</label>-->
                         <div class="controls">
@@ -122,20 +146,20 @@
         <table><tbody>
                 <tr>
 
-                    <td><input class="input-block-level" type="text" name="name[]" value="" /></td>
+                    <td><input class="input-block-level" required="" type="text" name="name[]" value="" /></td>
                     <td >
-                        <select name="gender[]" class="input-block-level">
+                        <select name="gender[]" required="" class="input-block-level">
                             <option value="male">male</option>
                             <option value="female">female</option>
                         </select>
                     </td>
                     <td >
-                        <select name="type[]" class="input-block-level">
+                        <select name="type[]" required="" class="input-block-level">
                             <option value="adviser">Adviser</option>
                             <option value="student">Student</option>
                         </select>
                     </td>
-                    <td><input class="input-medium" type="text" name="contact[]" value="" /></td>
+                    <td><input class="input-medium" required="" type="text" name="contact[]" value="" /></td>
                     <th><button class="btn btn-danger" type="button" id="remove_row"><i class="icon-minus-sign-alt"></button></th>
 
                 </tr>
@@ -154,7 +178,7 @@
 //        });
 //        return sum;
 //    };
-    
+
     $("body").on("click", "#add_row", function() {
         var newrow = $("#registration_detail tbody").html();
         $("#registration_form > tbody:last").append(newrow);
